@@ -1,0 +1,74 @@
+html{
+    background-color: #D3D3D3;
+    margin: 20px;
+}
+
+header{
+    border: solid 5px blue;
+
+}
+
+nav li{
+    display: inline-block;
+    margin: 2px;
+    padding: 5px;
+    border: solid 2px #000000;
+}
+
+.active{
+    background-color: white;
+}
+
+h1{
+    color: #000000;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    text-decoration: underline;
+}
+
+body{
+    border: #000000 solid 10px;
+    padding: 10px;
+}
+
+p{
+    margin: auto;
+    font-size: 30;
+    line-height: 30px;
+    text-align: center;
+}
+
+img{
+    border: solid 8px white;
+    border-radius: 15%;
+    margin: 10px;
+    min-height: 200px;
+    max-height: 500px;
+    min-width: 300px;
+    max-width: 700px;
+    
+}
+
+img:hover{
+    border: double 10px #4682b4;
+}
+
+img:nth-child(3n){
+    border: dashed 20px red;
+}
+
+footer{
+    padding: 2px 5px;
+}
+
+.top10NBA{
+    display: grid;
+    grid-template-columns: 3fr;
+}
+
+.WNBA{
+    display: flex;
+    flex-direction: column;
+}
