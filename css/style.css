@@ -13,6 +13,7 @@ nav li{
     margin: 2px;
     padding: 5px;
     border: solid 2px #000000;
+    font-weight: bold;
 }
 
 .active{
@@ -60,15 +61,89 @@ img:nth-child(3n){
 }
 
 footer{
-    padding: 2px 5px;
+    background-color: black;
+    padding: 10px 15px;
+    color: white;
+    margin: auto;
+    text-align: center;
 }
 
 .top10NBA{
     display: grid;
     grid-template-columns: 3fr;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.top10NBA > div p, #main1{
+    font-family: 'Red Hat Mono', monospace;
 }
 
 .WNBA{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    text-align: center;
 }
+
+.WNBA img{
+    min-height: 200px;
+    max-height: 400px;
+    max-width: 700px;
+    min-width: 380px;
+}
+
+.NBAlate1stround{
+    text-align: center;
+}
+
+.intro, .drafthistory{
+    text-align: center;
+}
+
+@keyframes mymove {
+    from {width: 15px; opacity: 0;}
+    to {width: 200px; opacity: 1;}
+}
+
+#logo{
+    animation-name: mymove;
+    animation-duration: 5s;
+}
+
+@media (prefers-reduced-motion) {
+    #logo{
+        animation: none;
+    }
+}
+
+i{
+    color: white;
+}
+
+a.skip{
+    display: none;
+}
+
+body{
+    background-image:url('../images/BasketballCourtImage.jpeg');
+}
+
+form{
+    padding: 15px;
+    border: solid 5px black;
+    margin: 10px;
+}
+
+legend{
+    padding: 10px;
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+input{
+    width: 100%;
+}
+
